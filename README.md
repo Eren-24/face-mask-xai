@@ -1,22 +1,29 @@
-# face-mask-xai
-Goal: Build a lightweight deep learning model to detect if a person is wearing a face mask, and use explainable AI techniques (Grad-CAM, saliency maps) to visualize what the model “sees” when making predictions.
+# 😷 Face Mask Detection with Explainable AI (xAI)
 
-Project deadline: 20 July 2025
+🧠 **Goal:**  
+Build a lightweight computer vision model to detect if a person is wearing a face mask, and explain *how* the model makes its decisions using Grad-CAM and saliency maps.
 
+📅 **Deadline:** *20 July 2025*  
+👥 **Team:** Group of 4 students (beginner project)
 
-Objective
- • Train a lightweight CNN (e.g., MobileNetV2) to classify images as “Mask” vs “No Mask”
- • Use explainability tools (Grad-CAM, saliency maps) to visualize and understand which facial regions the model uses for its decision
- • Analyze correct and incorrect predictions to identify failure modes and biases
+---
 
+## 📌 Project Overview
+- **Task:** Classify images as *masked* or *unmasked*
+- **Dataset:** RMFD (Real-World Masked Face Dataset) or similar
+- **Model:** Lightweight CNN or MobileNetV2
+- **Explainability:** Grad-CAM and saliency maps to visualize important regions
+- **Error Analysis:** Analyze incorrect predictions to understand failure cases
 
-Tech Stack
-	•	Python: main language
-	•	TensorFlow / Keras (or PyTorch)
-	•	Grad-CAM / tf-explain / TorchCAM: explainability
-	•	Matplotlib / OpenCV: visualization
-	•	Streamlit / Gradio (optional): demo
-	•	Google Colab / local CPU: training
+---
 
-
-Team Roles
+## 📂 Folder Structure
+face-mask-xai/
+├── data/                  # data loader & preprocessing scripts
+├── notebooks/             # Jupyter/Colab notebooks
+├── explainability/        # Grad-CAM, saliency map scripts
+├── models/                # trained models (do not commit large files)
+├── reports/               # final report, slides
+├── requirements.txt       # Python dependencies
+├── .gitignore
+└── README.md              # this file
