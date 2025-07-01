@@ -1,1 +1,22 @@
 
+# Basic data & plotting
+numpy
+pandas
+matplotlib
+seaborn
+
+# Deep learning (choose ONE: TensorFlow or PyTorch)
+tensorflow>=2.10
+# torch>=2.0
+# torchvision
+
+# Explainability tools
+tf-explain
+# torchcam  # use only if you go with PyTorch
+
+# Image processing
+opencv-python
+
+# Optional: notebook tools
+jupyter
+scikit-learn
